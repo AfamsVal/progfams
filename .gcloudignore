@@ -1,0 +1,13 @@
+node_modules
+.vscode
+public
+src
+.eslintignore
+.eslintrc
+.gitignore
+.travis.yml
+craco.config.js
+package-lock.json
+package.json
+README.md
+tailwind.config.js
