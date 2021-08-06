@@ -6,7 +6,9 @@ const header = () => {
   }
   return (
     <div className='py-4' style={style}>
-      <h1 className='text-white py-6 text-4xl pl-32 font-serif'>Welcome to LearnCode online</h1>
+      <h1 className='text-white py-6 font-serif text-center text-3xl lg:text-4xl'>
+        Welcome to LearnCode online
+      </h1>
     </div>
   )
 }

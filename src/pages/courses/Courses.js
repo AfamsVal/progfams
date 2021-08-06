@@ -73,7 +73,7 @@ const Courses = () => {
           </div>
         </div>
       </div>
-      <h1 className='text-2xl mx-36 mt-20 -mb-2'>Courses</h1>
+      <h1 className='text-2xl mx-4 lg:mx-36 mt-20 -mb-2'>Courses</h1>
       <div className='grid grid-rows-3'>
         <div className='lg:mx-32 flex sm:overflow-x-scroll overflow-y-hidden'>
           <CourseCard
