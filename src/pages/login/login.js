@@ -46,7 +46,7 @@ const Login = () => {
             <div className='flex justify-self-center mt-12'>
               <p className='text-lg pt-4'>Or login with</p>
               <img className='w-12 m-2' src={facebook} />
-              <img className='w-12 m-2' src={google} />
+              <img className='w-12 m-2 rounded-lg' src={google} />
               <img className='w-12 m-2' src={twitter} />
             </div>
           </div>
