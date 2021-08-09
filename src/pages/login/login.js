@@ -15,7 +15,7 @@ const Login = () => {
   return (
     <>
       <div className='w-full pb-36 pt-40' style={style}>
-        <form className='grid h-full shadow-md mx-8 bg-white lg:mx-20 md:grid-cols-2 xl:mx-72'>
+        <form className='grid h-full shadow-md mx-8 bg-white lg:mx-20 md:grid-cols-2'>
           <div className='grid'>
             <h1 className='text-center pt-8 text-4xl'>Sign in</h1>
             <div className='flex pt-8 text-lg mb-4 mx-4 sm:mx-16 border-b-2 border-gray-400'>

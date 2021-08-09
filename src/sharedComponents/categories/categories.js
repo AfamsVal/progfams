@@ -6,7 +6,7 @@ const Categories = ({ children }) => {
 }
 
 Categories.propTypes = {
-  children: PropTypes.React.ReactNode
+  children: PropTypes.ReactNode
 }
 
 export default Categories

@@ -1,1 +1,1 @@
-export { default as recoverAccount } from './recoverAccount'
+export { default as RecoverAccount } from './RecoverAccount'
