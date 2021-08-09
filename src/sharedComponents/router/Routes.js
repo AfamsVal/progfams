@@ -6,6 +6,8 @@ import landing from '../../pages/landing'
 import { Courses } from '../../pages/courses'
 import { register } from '../../pages/register'
 import { login } from '../../pages/login'
+import { forgetPassword } from '../../pages/forgetPassword'
+import { recoverAccount } from '../../pages/recoverAccount'
 
 const Routes = () => {
   return (
@@ -15,8 +17,10 @@ const Routes = () => {
         <Switch>
           <Route exact path='/' component={landing.Landing} />
           <Route exact path='/register' component={register} />
+          <Route exact path='/recover-account' component={recoverAccount} />
           <Route exact path='/courses' component={Courses} />
           <Route exact path='/login' component={login} />
+          <Route exact path='/forget-password' component={forgetPassword} />
           <Route exact path='*' component={notFound.NotFound} />
         </Switch>
         <Footer />
