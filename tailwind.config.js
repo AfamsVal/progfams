@@ -10,8 +10,8 @@ module.exports = {
     backgroundColor: theme => ({
       ...theme('colors'),
       offset: '#1bc1b6',
-      primary: '#2623CC',
-      'primary-200': '#003399',
+      primary: '#670B92',
+      'primary-200': '#670B92',
       info: '#E7E7FF'
     }),
     extend: {
@@ -19,7 +19,7 @@ module.exports = {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans]
       },
       fontSize: {},
-      colors: { primary: '#2623CC', 'primary-200': '#003399' },
+      colors: { primary: '#670B92', 'primary-200': '#003399' },
       screens: {
         sm: '640px',
         md: '768px',

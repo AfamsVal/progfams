@@ -1,7 +1,7 @@
 import React from 'react'
 import forgetPass from '../../assets/forgetPassword.png'
 
-const forgetPassword = () => {
+const ForgetPassword = () => {
   const style = {
     backgroundColor: '#F8F8F8'
   }
@@ -50,4 +50,4 @@ const forgetPassword = () => {
     </>
   )
 }
-export default forgetPassword
+export default ForgetPassword

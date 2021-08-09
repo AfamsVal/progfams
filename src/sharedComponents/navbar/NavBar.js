@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import classnames from 'classnames'
 
-import { HOME, ABOUT, FAQ, CONTACT_US, LOGIN, SIGN_UP } from './constants'
-
 const NavBar = () => {
   const { pathname } = useLocation()
   const [nav, setNav] = useState(true)
@@ -34,56 +32,68 @@ const NavBar = () => {
           <Link
             to='/'
             className={`${
-              pathname === '/' ? 'border-b-2 border-blue-800 font-bold text-primary' : 'text-black'
+              pathname === '/'
+                ? 'border-b-2 border-purple-800 font-bold text-primary'
+                : 'text-black'
             } block ml-4 mt-4 lg:inline-block lg:mt-0  hover:text-primary mr-6`}
           >
-            {HOME}
+            Home
           </Link>
 
           <Link
             to='/about'
             className={`${
               pathname === '/about'
-                ? 'border-b-2 border-blue-800 font-bold text-primary'
+                ? 'border-b-2 border-purple-800 font-bold text-primary'
                 : 'text-black'
             } block ml-4 mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-6`}
           >
-            {ABOUT}
+            About
           </Link>
           <Link
             to='/faq'
             className={`${
               pathname === '/faq'
-                ? 'border-b-2 border-blue-800 font-bold text-primary'
+                ? 'border-b-2 border-purple-800 font-bold text-primary'
                 : 'text-black'
             } block ml-4 mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-6`}
           >
-            {FAQ}
+            FAQ
           </Link>
 
+          <Link
+            to='/courses'
+            className={`${
+              pathname === '/courses'
+                ? 'border-b-2 border-purple-800 font-bold text-primary'
+                : 'text-black'
+            } block ml-4 mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-6`}
+          >
+            Courses
+          </Link>
           <Link
             to='/contact-us'
             className={`${
               pathname === '/contact-us'
-                ? 'border-b-2 border-blue-800 font-bold text-primary'
+                ? 'border-b-2 border-purple-800 font-bold text-primary'
                 : 'text-black'
             } block ml-4 mt-4 lg:inline-block lg:mt-0 hover:text-primary mr-6`}
           >
-            {CONTACT_US}
+            Contact Us
           </Link>
         </div>
         <div>
           <Link
             to='/login'
-            className='inline-block ml-4 text-sm px-6 py-3 leading-none border rounded text-black border-blue-800 hover:border-blue-800 hover:bg-primary hover:text-white mt-4 lg:mt-0'
+            className='inline-block ml-4 text-sm px-6 py-3 leading-none border rounded text-black border-purple-800 hover:border-purple-900 hover:bg-primary hover:text-white mt-4 lg:mt-0'
           >
-            {LOGIN}
+            Login
           </Link>
           <Link
-            to='/sign-up'
-            className='inline-block ml-4 text-sm px-6 py-3 leading-none border rounded text-white bg-primary  hover:border-blue-900 hover:bg-blue-900 border-blue-800  hover:text-white mt-4 lg:mt-0'
+            to='/register'
+            className='inline-block ml-4 text-sm px-6 py-3 leading-none border rounded text-white bg-primary  hover:border-purple-900 hover:bg-primary border-purple-800  hover:text-white mt-4 lg:mt-0'
           >
-            {SIGN_UP}
+            Register
           </Link>
         </div>
       </div>

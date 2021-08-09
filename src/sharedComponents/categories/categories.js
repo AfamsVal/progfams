@@ -1,7 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const categories = props => {
-  return <div className='w-max  m-2'>{props.children}</div>
+const Categories = ({ children }) => {
+  return <div className='w-max  m-2'>{children}</div>
 }
 
-export default categories
+Categories.propTypes = {
+  children: PropTypes.React.ReactNode
+}
+
+export default Categories

@@ -4,7 +4,7 @@ import { Footer, NavBar } from '..'
 import notFound from '../../pages/notFound'
 import landing from '../../pages/landing'
 import { Courses } from '../../pages/courses'
-import { register } from '../../pages/register'
+import { Register } from '../../pages/register'
 import { login } from '../../pages/login'
 import { forgetPassword } from '../../pages/forgetPassword'
 import { recoverAccount } from '../../pages/recoverAccount'
@@ -16,7 +16,7 @@ const Routes = () => {
       <Suspense fallback='Loading...'>
         <Switch>
           <Route exact path='/' component={landing.Landing} />
-          <Route exact path='/register' component={register} />
+          <Route exact path='/register' component={Register} />
           <Route exact path='/recover-account' component={recoverAccount} />
           <Route exact path='/courses' component={Courses} />
           <Route exact path='/login' component={login} />

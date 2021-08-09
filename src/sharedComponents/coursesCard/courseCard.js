@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const courseCard = props => {
+const CourseCard = ({ image, title, lessons, price, discount }) => {
   const style = {
     color: '#640B92'
   }
@@ -11,14 +12,14 @@ const courseCard = props => {
   }
   return (
     <div className='bg-white border-2 mx-4 mt-8' style={inline}>
-      <img src={props.image} alt='course' />
+      <img src={image} alt='course' />
       <div>
-        <h1 className='m-2 font-semibold'>{props.title}</h1>
-        <p className='font-normal mt-8 ml-2'>{props.lessons}</p>
+        <h1 className='m-2 font-semibold'>{title}</h1>
+        <p className='font-normal mt-8 ml-2'>{lessons}</p>
         <p className='ml-2 text-2xl'>
-          {props.price}
+          {price}
           <span className='ml-2 text-lg' style={style}>
-            {props.discount}
+            {discount}
           </span>
         </p>
       </div>
@@ -26,4 +27,11 @@ const courseCard = props => {
   )
 }
 
-export default courseCard
+CourseCard.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  lessons: PropTypes.string,
+  price: PropTypes.string,
+  discount: PropTypes.string
+}
+export default CourseCard

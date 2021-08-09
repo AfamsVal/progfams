@@ -1,7 +1,7 @@
 import React from 'react'
 import recover from '../../assets/recover.png'
 
-const recoverAccount = () => {
+const RecoverAccount = () => {
   const style = {
     backgroundColor: '#F8F8F8'
   }
@@ -31,4 +31,4 @@ const recoverAccount = () => {
     </>
   )
 }
-export default recoverAccount
+export default RecoverAccount

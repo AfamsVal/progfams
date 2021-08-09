@@ -1,28 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ABOUT_US, HOW_IT_WORKS, FAQ, PRIVACY_POLICY, COPY_RIGHT } from './constants'
+
 const Footer = () => {
   return (
     <footer className='relative bg-black text-white px-4 py-10'>
       <div className='grid grid-cols-4 gap-1 md:mx-80 mt-10'>
         <div className='mt-3  text-center'>
           <Link to='#' title='' className='footer-links text-white'>
-            {ABOUT_US}
+            Home
           </Link>
         </div>
         <div className='mt-3  text-center'>
           <Link to='#' title='' className='footer-links text-white'>
-            {HOW_IT_WORKS}
+            About
           </Link>
         </div>
         <div className='mt-3  text-center'>
           <Link to='#' title='' className='footer-links text-white'>
-            {FAQ}
+            FAQ
           </Link>
         </div>
         <div className='mt-3  text-center'>
           <Link to='#' title='' className='footer-links text-white'>
-            {PRIVACY_POLICY}
+            Privacy Policy
           </Link>
         </div>
       </div>
@@ -36,7 +36,7 @@ const Footer = () => {
             <span>
               <i className='fas fa-envelope text-base text-white' />
             </span>
-            <span className='ml-3 text-white'>&copy; {COPY_RIGHT} </span>
+            <span className='ml-3 text-white'>&copy; Progfams </span>
           </Link>
         </div>
       </div>
