@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../../sharedComponents/header/Header'
-import CourseCard from '../../sharedComponents/coursesCard/CourseCard'
+import Header from '../../sharedComponents/header/header'
+import CourseCard from '../../sharedComponents/coursesCard/courseCard'
 import cardImage from '../../assets/course.png'
 
 const Courses = () => {

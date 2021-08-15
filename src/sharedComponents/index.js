@@ -1,7 +1,6 @@
-import NavBar from './navbar/NavBar'
-import Footer from './footer/Footer'
-import Categories from './categories/Categories'
-import CourseCard from './coursesCard/CourseCard'
-import Header from './header/Header'
+import NavBar from './navbar/navBar'
+import Footer from './footer/footer'
+import CourseCard from './coursesCard/courseCard'
+import Header from './header/header'
 
-export { NavBar, Footer, Categories, CourseCard, Header }
+export { NavBar, Footer, CourseCard, Header }
